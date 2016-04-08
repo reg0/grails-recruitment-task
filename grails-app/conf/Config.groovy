@@ -59,6 +59,10 @@ grails.exceptionresolver.params.exclude = ['password']
 // configure auto-caching of queries by default (if false you can cache individual queries with 'cache: true')
 grails.hibernate.cache.queries = false
 
+// When set to true the save method with throw a grails.validation.ValidationException if validation fails during a save.
+grails.gorm.failOnError = true
+
+
 environments {
     development {
         grails.logging.jul.usebridge = true
