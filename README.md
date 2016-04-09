@@ -10,11 +10,9 @@ List entries = BlogEntry.list().findAll {
 ```
 Please make your opinion about it's performance, how many database queries it'd make and what (if anything) can be optimized here?
 
-2. in EntryService class there is a piece of code
-```
+2. in EntryService class there is a piece of code```
 notifyAuthors(entries*.author, subject, contentClosure)
-```
-How would you avoid duplicating authors keeping the code as simple as possible?
+```How would you avoid duplicating authors keeping the code as simple as possible?
 
 3. in EntryService class, there is a method called "notifyAuthors", what are advantages of using closure here?
 how it works? why couldn't or shouldn't we call message(code: '...') here in service?
