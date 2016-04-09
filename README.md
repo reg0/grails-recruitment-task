@@ -3,9 +3,11 @@ A couple of simple tasks for recruitment of full-stack Grails developer
 
 ## tasks
 1. in EntryService class there is a piece of code```
+
 List entries = BlogEntry.list().findAll {
     it.contents.contains(filter) || it.title.contains(filter) || it.author.name.contains(filter)
 }
+
 ```Please make your opinion about it's performance, how many database queries it'd make and what (if anything) can be optimized here?
 
 2. in EntryService class there is a piece of code```
